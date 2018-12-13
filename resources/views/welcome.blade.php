@@ -1,5 +1,7 @@
 @extends('layouts.app')
 @section('content')
+@section('title','Inicio - Vapean.do')
+
 <div class="container-fluid">
           <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -27,7 +29,8 @@
               <span class="sr-only">Next</span>
             </a>
 </div>
-
+<center>
+<img class="img-fluid" src="{{asset('img/brand.png')}}" /></center>
 <div class="container-fluid">
   <div class="row">
   <div class="col-12 col-md-4 mb-4">

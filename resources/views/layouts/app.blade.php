@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Shop Homepage - Start Bootstrap Template</title>
+    <title>@yield('title','Vapean.do')</title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Custom styles for this template -->
@@ -19,7 +19,9 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="/">vapean.do</a>
+      <a class="navbar-brand" href="/">
+        <img src="{{asset('img/brand.PNG')}}" class="img-fluid" width="50px" height="50px" alt="brand">
+        vapean.do</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -45,7 +47,7 @@
               <a class="nav-link" href="{{url('/accesories')}}">Baterias y Accesorios</a>
             </li>
                 <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <input class="form-control mr-sm-2" type="text" placeholder="Buscar..." aria-label="Search">
       <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
     </form>
           </ul>

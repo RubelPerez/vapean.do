@@ -21,6 +21,35 @@ Route::get('/atos', 'atoController@index');
 Route::get('/liquids', 'liquidController@index');
 Route::get('/accesories', 'accesoryController@index');
 
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+//crud kits
+Route::get('admin/kits/', 'kitController@admin');
+
+//crud MODS
+Route::get('admin/mods/', 'modController@admin');
+
+//crud liquid
+Route::get('admin/liquids/', 'liquidController@admin');
+
+//crud accesories
+Route::get('admin/accesories/', 'accesoryController@admin');
+
+
+//crud atos
+Route::get('admin/atos/', 'atoController@admin');
+//detalles
+Route::get('/admin/atos/{id}/details', 'atoController@details');
+//insertar
+Route::get('/admin/atos/{id}/details/create', 'atoController@create');
+Route::post('/admin/atos','atoController@store');
+//editar
+Route::get('/admin/atos/{id}/edit', 'atoController@edit');
+Route::post('/admin/atos/{id}/edit','atoController@update');
+//delete
+Route::get('/admin/atos/{id}/ver','atoController@ver');
+Route::delete('/admin/atos/{id}','atoController@destroy');
+//fin atos
+Auth::routes();
