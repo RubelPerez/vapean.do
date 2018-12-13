@@ -14,6 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/kits', 'kitController@index');
+Route::get('/mods', 'modController@index');
+Route::get('/kits', 'kitController@index');
+Route::get('/atos', 'atoController@index');
+Route::get('/liquids', 'liquidController@index');
+Route::get('/accesories', 'accesoryController@index');
 
 Auth::routes();
 

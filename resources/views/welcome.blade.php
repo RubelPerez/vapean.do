@@ -30,14 +30,14 @@
 
 <div class="container-fluid">
   <div class="row">
-  <div class="col-12 col-md-4">
-    E-Liquids
+  <div class="col-12 col-md-4 mb-4">
+     <img class="img-fluid" src="http://placehold.it/740x600" alt="First slide">
   </div>
-<div class="col-12 col-md-4">
-    Lo nuevo
+<div class="col-12 col-md-4 mb-4">
+     <img class="img-fluid" src="http://placehold.it/740x600" alt="First slide">
   </div>
-<div class="col-12 col-md-4">
-    Ofertas
+<div class="col-12 col-md-4 mb-4">
+   <img class="img-fluid" src="http://placehold.it/740x600" alt="First slide">
   </div>
 
 </div></div></div>
